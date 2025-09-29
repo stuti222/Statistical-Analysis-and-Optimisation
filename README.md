@@ -37,13 +37,15 @@ The dataset contains the following variables:
 ### 2. Model Development
 - Developed a **second-order polynomial regression model** including interaction terms
 - Ensured functional marginality: interaction terms only included if main effects are significant
-- Represented model in matrix form:  
-  \[
-  \hat{Y} = X \hat{\beta}, \quad Y \sim N_n(X\beta, \sigma^2 I)
-  \]
+- Represented model in matrix form:
+
+$$
+\hat{Y} = X \hat{\beta}, \quad 
+Y \sim N_n(X\beta, \sigma^2 I)
+$$
 
 ### 3. Model Selection
-- Used **Global and Partial F-tests**, **ANOVA**, **Adjusted R²**, **AIC**, **Mallow’s Cp**
+- Used **Global and Partial F-tests**, **ANOVA**, **Adjusted $R^2$**, **AIC**, **Mallow’s Cp**
 - Explored stepwise and all-subset regression to balance complexity vs. predictive performance
 - Selected the best-fitting quadratic model with key interaction terms
 
@@ -52,14 +54,16 @@ The dataset contains the following variables:
   - QQ plot for normality
   - Scatter of residuals for homoscedasticity
 - Performance metrics:
-  - High R² and Adjusted R²
+  - High $R^2$ and Adjusted $R^2$
   - Low MSE and AIC
 
 ### 5. Optimisation
 - Calculated stationary point analytically for second-order model:
-  \[
-  \hat{x_s} = -\frac{1}{2} \hat{\beta}^{-1} \hat{b}
-  \]
+
+$$
+\hat{x}_s = -\frac{1}{2} \hat{\beta}^{-1} \hat{b}
+$$
+
 - Eigenvalues checked to confirm maximum
 - Optimal conditions predicted within experimental ranges
 
@@ -75,7 +79,7 @@ The dataset contains the following variables:
 | Predicted Yield | 96.3%     | Maximum expected yield |
 
 > Sensitivity analysis indicates temperature and pH as the key drivers of reaction yield.
-  
+
 ---
 
 ## Future Work
@@ -83,4 +87,3 @@ The dataset contains the following variables:
 - Extend to **multi-stage or multi-output optimisation**  
 - Automate **model selection and diagnostics validation**  
 - Integrate **visualisations for interactive portfolio display**
-

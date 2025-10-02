@@ -3,7 +3,7 @@
 # Predictive Optimisation of Reaction Yield
 
 ## Project Overview
-This project focuses on identifying the combination of experimental settings—**temperature**, **pH**, and **pressure**—that maximise the yield of a chemical reaction. Using **statistical data science techniques**, we developed a multivariate polynomial regression model to guide experimental decisions.
+This project focuses on identifying the combination of experimental settings: **temperature**, **pH**, and **pressure**, that maximise the yield of a chemical reaction. Using **statistical data science techniques**, we developed a multivariate polynomial regression model to guide experimental decisions.
 
 **Objective:** Recommend optimal settings for reaction conditions to maximise predicted yield.
 
